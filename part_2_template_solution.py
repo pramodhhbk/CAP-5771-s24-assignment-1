@@ -128,7 +128,7 @@ class Section2:
         ntest_list: list[int] = [],
     ) -> dict[int, dict[str, Any]]:
         """ """
-        X, y, Xtest, ytest = u.prepare_data()
+        # X, y, Xtest, ytest = u.prepare_data()
         answer = {}
         
         for i in range(0,len(ntrain_list)):
