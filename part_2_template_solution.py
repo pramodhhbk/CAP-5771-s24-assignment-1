@@ -95,8 +95,8 @@ class Section2:
         # return values:
         # Xtrain, ytrain, Xtest, ytest: the data used to fill the `answer`` dictionary
 
-        """Xtrain = Xtest = np.zeros([1, 1], dtype="float")
-        ytrain = ytest = np.zeros([1], dtype="int")"""
+        # Xtrain = Xtest = np.zeros([1, 1], dtype="float")
+        # ytrain = ytest = np.zeros([1], dtype="int")
         
         
 
