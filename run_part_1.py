@@ -5,6 +5,7 @@ from typing import Any
 from part_1_template_solution import Section1 as Part1
 import utils as u
 
+
 #######################################################################
 
 # Use Python 10.x
@@ -165,14 +166,14 @@ if __name__ == "__main__":
 
     # Attention: the seed should never be changed. If it is, automatic grading
     # of the assignment could very well fail, and you'd lose points.
-    # Make sure that all sklearn functions you use that require a seed have this
+    # Make sure that all sklearn functions you use that require a seed have this cle
     # seed specified in the argument list, namely: `random_state=self.seed` if
     # you are inside the solution class.
     part1 = Part1(seed=42, frac_train=0.2)
-
+    #answer1B, X, y , Xtest, ytest = part_B(part1)
     # X and Y are Mnist datasets
     answer1A = part_A(part1)
-    answer1B = part_B(part1)
+    answer1B,X,y,Xtest,ytest = part_B(part1)
     answer1C = part_C(part1, X, y)
     answer1D = part_D(part1, X, y)
     answer1E = part_E(part1, X, y)
@@ -190,5 +191,8 @@ if __name__ == "__main__":
     answer["1E"] = answer1E
     answer["1F"] = answer1F
     answer["1G"] = answer1G
+    #print(answer)
+    #print(answer["1G"])
+    #print(answer["1F"])
 
     u.save_dict("section1.pkl", answer)
